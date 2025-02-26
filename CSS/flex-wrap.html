@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+            border: 1px dashed black;
+
+        }
+        div{
+            width: 500px;  height: 100px;
+            text-align : center;
+            font-size: 20px;
+            color: white;
+            border: 2px solid black;
+            margin: 10px;
+
+        }
+        div:nth-child(1){
+            background: red;
+        }
+        div:nth-child(2){
+            background: rgb(9, 255, 0);
+        }
+        div:nth-child(3){
+            background: rgb(0, 17, 255);
+        }
+        div:nth-child(4){
+            background: rgb(255, 0, 149);
+        }
+        div:nth-child(5){
+            background: rgb(255, 174, 0);
+        }
+        div:nth-child(6){
+            background: rgb(0, 217, 255);
+        }
+
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <h1>noWrap</h1>
+    <section class="nowrap">
+        <div>아우터</div>
+        <div>스웨터</div>
+        <div>데님</div>
+        <div>04</div>
+        <div>05</div>
+        <div>06</div>
+    </section>
+
+    <h1>wrap</h1>
+    <section class="wrap">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+        <div>04</div>
+        <div>05</div>
+        <div>06</div>
+    </section>
+
+
+    <h1>wrap-reverse</h1>
+    <section class="wrap-reverse">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+        <div>04</div>
+        <div>05</div>
+        <div>06</div>
+    </section>
+
+
+</body>
+</html>
